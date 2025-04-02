@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автошаблоны</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Выберите задание</h2>
+
+    <label for="kodirovka">Кодировка:</label>
+    <input type="text" id="kodirovka" list="kodirovka-list">
+<datalist id="kodirovka-list"></datalist>
+
+    <label for="zadanie">Номер задания:</label>
+    <input type="text" id="zadanie" list="zadanie-list">
+    <datalist id="zadanie-list"></datalist>
+
+    <label for="balls">Выберите баллы:</label>
+    <select id="balls">
+        <option value="2">2 балла</option>
+        <option value="1">1 балл</option>
+        <option value="0">0 баллов</option>
+        <option value="no">Нет решения</option>
+    </select>
+
+    <label for="template">Шаблон</label>
+    <textarea id="template" readonly></textarea>
+
+    
+
+    <button id="copyTemplate">Скопировать шаблон</button>
+    <div id="solution-container"></div>
+    <script src="popup.js" defer></script>
+</body>
+</html>
